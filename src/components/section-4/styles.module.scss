@@ -1,0 +1,152 @@
+@use "src/styles/global-styles.scss" as *;
+
+.container {
+  width: 100%;
+  padding: 80px 30px;
+  background-color: var(--bright-blue-darker);
+
+  @include media($small, down) {
+    padding: 60px 20px;
+  }
+  .inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.section4 {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .text {
+    width: calc(50% - 20px);
+    h2,
+    p {
+      color: var(--white);
+    }
+    p {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  form {
+    width: calc(50% - 20px);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: 0 4px 2px 0px rgba(#212728, 0.1);
+    h3 {
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 0px;
+      color: var(--black);
+      text-transform: none;
+      font-weight: 500;
+      font-family: var(--font-condensed);
+    }
+    label {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: var(--purple);
+      margin: 5px 0;
+      position: relative;
+      top: 18px;
+      background-color: var(--white);
+      padding: 0 5px;
+      left: 17px;
+      font-weight: 700;
+    }
+    input {
+      width: 100%;
+      display: block;
+      border-radius: 50px;
+      padding: 16px 20px;
+      border: 1px solid var(--dark-gray);
+      @include hover {
+        border: 1px solid var(--orange);
+        outline: 1px solid var(--orange);
+      }
+      ::placeholder {
+        color: var(--dark-gray);
+      }
+    }
+  }
+
+  button {
+    color: var(--white);
+    font-family: var(--font-main);
+    font-weight: 700;
+    border-radius: 30px;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color var(--transition);
+    margin-top: 30px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--purple);
+
+    @include hover {
+      background-color: var(--purple-darker);
+    }
+
+    svg {
+      width: 16px;
+      margin-right: 4px;
+      position: relative;
+      top: 1px;
+    }
+
+    &.success {
+      background-color: var(--green);
+      pointer-events: none;
+    }
+    &.loading {
+      background-color: var(--dark-gray);
+      pointer-events: none;
+    }
+  }
+
+  .error {
+    color: var(--red);
+    margin: 5px 0 0 0;
+  }
+
+  @include media($medium-lowest, down) {
+    .text {
+      width: calc(40% - 20px);
+      p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    form {
+      width: calc(60% - 20px);
+    }
+  }
+
+  @include media($small-highest, down) {
+    .text {
+      width: 100%;
+    }
+    form {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  @include media($small-lowest, down) {
+    form {
+      padding: 20px;
+      h3 {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+}

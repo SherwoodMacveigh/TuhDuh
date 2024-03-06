@@ -1,0 +1,18 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+// Font Variables
+$font: (
+  "--font-fallback": system-ui,
+  "--font-main": (
+    "Roboto",
+    sans-serif,
+    var(--font-fallback),
+  ),
+  "--font-condensed": (
+    "Roboto Condensed",
+    sans-serif,
+    var(--font-fallback),
+  ),
+);
