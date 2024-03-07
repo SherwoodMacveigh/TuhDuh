@@ -28,6 +28,33 @@
     width: calc(50% - 20px);
   }
 
+  .button {
+    background-color: var(--purple);
+    color: var(--white);
+    font-family: var(--font-main);
+    font-weight: 700;
+    border-radius: 30px;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color var(--transition);
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-flex;
+
+    svg {
+      width: 16px;
+      margin-left: 4px;
+      position: relative;
+      top: 1px;
+    }
+
+    @include hover {
+      background-color: var(--purple-darker);
+    }
+  }
+
   @include media($small-highest, down) {
     flex-wrap: wrap;
     div {

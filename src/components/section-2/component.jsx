@@ -30,7 +30,7 @@ export const Section2 = () => {
             <p>
               Experience innovation in every aspect of your family life. Tuhduh
               uses AI and neuroscience innovations to keep you organized and
-              turns tasks into points of learning anc connection.
+              turns tasks into points of learning and connection.
             </p>
           </div>
         </div>

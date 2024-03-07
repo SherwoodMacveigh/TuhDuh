@@ -1,5 +1,5 @@
 import React from "react";
-
+import SVG from "../svg";
 import styles from "./styles.module.scss";
 
 export const Section1 = () => {
@@ -17,9 +17,17 @@ export const Section1 = () => {
             </p>
             <p>
               Tuhduh is your personal guide for navigating the dynamics of daily
-              family life. it's not magic - it's cognitive learning paired with
+              family life. it's not magic - It's cognitive learning paired with
               AI.
             </p>
+            <a
+              className={styles.button}
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.figma.com/proto/gQ1l7GSYJgyZ46YLF2OUHM/TuhDuh---Final?type=design&node-id=115-1459&t=iyLfhmGLjxByWCxf-1&scaling=scale-down&page-id=108%3A2121&starting-point-node-id=115%3A1459&show-proto-sidebar=1&mode=design"
+            >
+              View Prototype <SVG name="arrow" />
+            </a>
           </div>
           <img
             src="./tuhduh-mood+engagement-insight.png"
