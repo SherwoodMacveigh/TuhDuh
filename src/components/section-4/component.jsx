@@ -42,7 +42,7 @@ export const Section4 = () => {
     formData.append("name", nameValue);
     formData.append("email", emailValue);
 
-    return fetch("https://getform.io/f/8d9a134a-7c2b-4dfb-9ab8-52ac4f4aa8c4", {
+    return fetch(process.env.REACT_APP_GET_FORM_ENDPOINT, {
       method: "POST",
       body: formData,
     })
@@ -88,7 +88,7 @@ export const Section4 = () => {
           </div>
           <form>
             <h3>Learn More About Tuhduh</h3>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -98,7 +98,7 @@ export const Section4 = () => {
               onBlur={saveInput}
               tabIndex="0"
             />
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="text"
               id="email"

@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
+      - name: "Create env file"
+        run: |
+          touch .env
+          echo REACT_APP_GET_FORM_ENDPOINT=${{ secrets.GET_FORM_ENDPOINT }} >> .env
+          echo REACT_APP_MIXPANEL_TOKEN=${{ secrets.MIXPANEL_TOKEN }} >> .env
+          cat .env
       - name: Deploy
         run: |
           npm install
