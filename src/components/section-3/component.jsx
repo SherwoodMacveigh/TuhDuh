@@ -10,7 +10,7 @@ export const Section3 = () => {
       <div className={styles.inner}>
         <div className={styles.section3}>
           <img
-            src="/tuhduh-task-management.png"
+            src="./tuhduh-task-management.png"
             alt="TuhDuh Task Management, alongside graphic of happy child birds playing"
           />
           <div>

@@ -8,7 +8,6 @@ import Section4 from "./components/section-4";
 function App() {
   return (
     <div>
-      Hello
       <Header />
       <Section1 />
       <Section2 />

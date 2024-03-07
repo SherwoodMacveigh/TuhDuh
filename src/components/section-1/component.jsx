@@ -22,7 +22,7 @@ export const Section1 = () => {
             </p>
           </div>
           <img
-            src="/tuhduh-mood+engagement-insight.png"
+            src="./tuhduh-mood+engagement-insight.png"
             alt="TuhDuh Mood + Engagement and Insight, alongside graphic of happy child and parent birds"
           />
         </div>
